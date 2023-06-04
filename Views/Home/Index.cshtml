@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+<div id="user-form">
+    <ul>
+        <li id="tab-login" class="tab-bot-border">Login</li>
+        <li id="tab-register" class="tab-bot-border">Register</li>
+    </ul>
+
+    <!-- LOGIN -->
+    <div id="login-form">
+        @RenderPage("~/Views/Shared/Forms/Login.cshtml")
+
+    </div>
+
+
+    <!-- REGISTER -->
+    <div id="register-form">
+
+        @RenderPage("~/Views/Shared/Forms/Register.cshtml")
+
+    </div>
+
+
+</div>
+
+
+

@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+@model LoginEncryption2.Models.FormData
+
+
+
+<!-- Strongly typed synchronous form-->
+<h2>Register</h2>
+@using (Html.BeginForm("RegisterForm", "Form", FormMethod.Post))
+{
+    @Html.TextBoxFor(model => model.Email, new { @type = "email", @placeholder = "Email"})
+    <br>
+    @Html.TextBoxFor(model => model.Password, new { @type = "password", @placeholder = "Password" })
+    <br>
+    <input type="submit" value="Submit" />
+}
+
